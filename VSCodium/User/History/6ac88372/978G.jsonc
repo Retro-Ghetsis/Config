@@ -1,0 +1,8 @@
+{
+    "layer": "top",
+
+    "modules-left": [],
+    "modules-center": ["clock", "hyprland/workspaces"],
+    "modules-right": ["pulseaudio", "network", "battery"],
+
+}

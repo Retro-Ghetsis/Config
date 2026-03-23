@@ -1,0 +1,14 @@
+file:///usr/share/sddm/themes/pixie/theme.conf {"mtime":1774235687899,"ctime":1774235687899,"size":323,"etag":"3fon13981ad","orphaned":false,"typeId":""}
+[General]
+# Path to the wallpaper. If it's in the assets folder, use "assets/background.jpg"
+background=assets/def.jpg
+
+# Material You-like colors (we can refine these)
+primaryColor=#E3E3DC
+accentColor=#A9C78F
+backgroundColor=#1A1C18
+textColor=#E3E3DC
+
+# Font settings
+fontFamily=Google Sans Flex Freeze
+fontSize=12

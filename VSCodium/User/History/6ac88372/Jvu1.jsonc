@@ -1,0 +1,25 @@
+{
+    "layer": "top",
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "clock": {
+        "interval": 60,
+        "format": "{:%I:%M %p}"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}: {icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": ""
+        },
+        "persistent-workspaces": {
+            "*": 3 // 5 workspaces by default on every monitor
+        }
+    }
+}

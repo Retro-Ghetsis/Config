@@ -1,0 +1,16 @@
+{
+    "layer": "top",
+    "modules-center": [
+        "clock",
+        "hyprland/workspaces",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+    "clock": {
+        "interval": 60,
+        "format": "{:%I:%M %p}",
+        "max-length": 25
+    },
+    
+}

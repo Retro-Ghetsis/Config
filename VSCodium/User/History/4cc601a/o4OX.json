@@ -1,0 +1,12 @@
+{
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.fontSize": 20,
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font Mono'",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth"
+}

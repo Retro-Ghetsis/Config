@@ -1,0 +1,108 @@
+@import "colors.css";
+
+/* ---------------- Global ---------------- */
+
+* {
+    all: unset;
+    font-family: "Google Sans", "JetBrainsMono Nerd Font Propo", monospace;
+    font-size: 20px;
+}
+
+/* ---------------- Tooltip ---------------- */
+
+tooltip {
+    background-color: @bg1;
+    color: @fg;
+    border-radius: 12px;
+    border: 1px solid @bg3;
+}
+
+tooltip box {
+    margin: 8px 10px;
+}
+
+/* ---------------- Module Containers ---------------- */
+
+.modules-center {
+    background-color: @bg1;
+    border-radius: 99px;
+    padding: 4px 16px;
+}
+
+.modules-right {
+    background-color: @bg1;
+    border-radius: 99px;
+    padding: 4px 12px;
+    margin: 4px 12px;
+}
+
+/* ---------------- Clock ---------------- */
+
+#clock {
+    font-weight: 500;
+    margin: 0 16px;
+    letter-spacing: 0.3px;
+}
+
+/* ---------------- Workspaces ---------------- */
+
+#workspaces {
+  background-color: @bg1;
+  border-radius: 99px;
+  margin: 2px 10px;
+  padding: 2px 14px;
+}
+
+#workspaces button {
+    background-color: @bg3;
+    border-radius: 99px;
+    margin: 2px 4px;
+    padding: 2px 20px;
+
+    transition:
+        background-color 180ms ease,
+        padding 120ms ease;
+}
+
+#workspaces button.empty {
+    color: @grey;
+}
+
+#workspaces button:hover {
+    background-color: @bg1;
+    padding: 2px 16px;
+}
+
+#workspaces button.active {
+    background-color: @green;
+    color: @bg1;
+    font-weight: 500;
+}
+/* ---------------- System Modules ---------------- */
+
+#pulseaudio,
+#network {
+    margin: 0 12px;
+}
+
+/* ---------------- Battery ---------------- */
+
+#battery {
+    background-color: @green;
+    padding: 2px 12px;
+    border-radius: 99px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: @bg2;
+    margin: 0 8px;
+
+    transition: background-color 200ms ease;
+}
+
+#battery.warning {
+    background-color: @yellow;
+}
+
+#battery.critical {
+    background-color: @red;
+}

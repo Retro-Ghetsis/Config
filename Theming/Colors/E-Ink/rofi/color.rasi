@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : E-Ink Dark Conversion
+ * Base   : E-Ink Dark theme
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #333333FF;
+    background-alt: #545454FF;
+    foreground:     #C2C2C2FF;
+    selected:       #868686FF;
+    active:         #B8B8B8FF;
+    urgent:         #CCCCCCFF;
+}

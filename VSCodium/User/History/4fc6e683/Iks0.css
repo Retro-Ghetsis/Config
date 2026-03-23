@@ -1,0 +1,36 @@
+ @import "colors.css";
+
+ * {
+    all: unset;
+     font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo";
+     
+ }
+
+ .modules-center {
+     background-color: @bg1;
+     border-radius: 99px;
+     padding: 2px 12px;
+ }
+
+ #clock {
+    font-weight: 500;
+ }
+
+ #workspaces {
+    background-color: @red;
+    padding: 2px 4px;
+    margin: 0 0;
+    border-radius: 99px; 
+ }
+
+ #workspaces button {;
+    background-color: @blue;
+    padding: 2px 4px ; 
+    border-radius: 99px;
+    margin: 0 2px;
+ }
+
+ #workspaces button.active {
+    background-color: @green;
+    min-width: 1.5rem;
+ } 

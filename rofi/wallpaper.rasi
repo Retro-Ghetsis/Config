@@ -1,0 +1,158 @@
+/**
+ *
+ * Rofi Theme – Wallpaper Switcher Optimized
+ * Previews only, grid layout, clean spacing
+ *
+ */
+
+/*****----- Configuration -----*****/
+configuration {
+    modi: "drun";
+    show-icons: true;
+    display-drun: "";
+    drun-display-format: "{name}";
+}
+
+/*****----- Global -----*****/
+@import "shared/colors.rasi"
+@import "shared/fonts.rasi"
+
+/*****----- Window -----*****/
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+
+    width: 800px;
+    margin: 0px;
+    padding: 0px;
+
+    border: 0px;
+    border-radius: 16px;
+    border-color: @selected;
+
+    background-color: @background;
+}
+
+/*****----- Main Layout -----*****/
+mainbox {
+    spacing: 12px;
+    padding: 14px;
+
+    background-color: transparent;
+
+    children: [ "inputbar", "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    spacing: 10px;
+
+    padding: 12px 14px;
+
+    border-radius: 12px;
+
+    background-color: @background-alt;
+
+    text-color: @foreground;
+
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color: @selected;
+    background-color: transparent;
+}
+
+textbox-prompt-colon {
+    enabled: false;
+}
+
+entry {
+    expand: true;
+
+    background-color: transparent;
+
+    placeholder: "Search wallpapers";
+    placeholder-color: @foreground-alt;
+
+    text-color: @foreground;
+
+    cursor: text;
+}
+
+/*****----- Listview -----*****/
+listview {
+    columns: 5;               /* grid layout */
+    lines: 3;                 /* max visible rows */
+
+    spacing: 12px;
+
+    dynamic: true;
+    cycle: true;
+
+    layout: horizontal;       /* horizontal grid */
+    scrollbar: false;
+
+    background-color: transparent;
+}
+
+/*****----- Elements -----*****/
+element {
+    spacing: 0px;             /* remove text spacing */
+    padding: 0px;
+
+    border-radius: 12px;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+/***** Hover *****/
+element normal.active {
+    background-color: rgba(255,255,255,0.08);  /* subtle highlight */
+}
+
+/***** Selected *****/
+element selected.normal {
+    background-color: @selected;
+}
+
+/***** Icon (wallpaper preview) *****/
+element-icon {
+    size: 180px;              /* large preview for wallpapers */
+    background-color: transparent;
+    border-radius: 12px;
+    text-color: inherit;
+}
+
+/***** Text (hidden) *****/
+element-text {
+    enabled: false;           /* hide text entirely */
+}
+
+/*****----- Scrollbar -----*****/
+scrollbar {
+    handle-width: 4px;
+    border-radius: 8px;
+
+    handle-color: @selected;
+    background-color: @background-alt;
+}
+
+/*****----- Error -----*****/
+error-message {
+    padding: 14px;
+
+    border: 2px;
+    border-radius: 12px;
+    border-color: @selected;
+
+    background-color: @background;
+    text-color: @foreground;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: @foreground;
+}

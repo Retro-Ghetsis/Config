@@ -1,0 +1,109 @@
+@import "colors.css";
+
+/* ---------------- Global ---------------- */
+
+* {
+    all: unset;
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", monospace;
+    font-size: 18px;
+}
+
+/* ---------------- Tooltip ---------------- */
+
+tooltip {
+    background-color: @bg1;
+    color: @fg;
+    border-radius: 12px;
+    border: 1px solid @bg3;
+}
+
+tooltip box {
+    margin: 8px 10px;
+}
+
+/* ---------------- Center Modules ---------------- */
+
+.modules-center {
+    background-color: @bg1;
+    border-radius: 99px;
+    padding: 4px 14px;
+}
+
+/* ---------------- Clock ---------------- */
+
+#clock {
+    font-weight: 500;
+    margin: 0 14px;
+    letter-spacing: 0.3px;
+}
+
+/* ---------------- Workspaces ---------------- */
+
+#workspaces {
+    background-color: @bg2;
+    padding: 3px 5px;
+    margin: 2px 12px;
+    border-radius: 99px;
+}
+
+#workspaces button {
+    background-color: @bg3;
+    padding: 2px 9px;
+    border-radius: 99px;
+    margin: 0 2px;
+    min-width: 10px;
+
+    transition:
+        background-color 200ms ease,
+        min-width 200ms ease,
+        color 200ms ease;
+}
+
+#workspaces button.empty {
+    color: @grey;
+}
+
+#workspaces button:hover {
+    background-color: @bg2;
+}
+
+#workspaces button.active {
+    background-color: @green;
+    color: @bg1;
+    min-width: 1.6rem;
+    font-weight: 500;
+}
+
+/* ---------------- Audio ---------------- */
+
+#pulseaudio {
+    margin: 0 14px;
+}
+
+/* ---------------- Network ---------------- */
+
+#network {
+    margin: 0 14px;
+}
+
+/* ---------------- Battery ---------------- */
+
+#battery {
+    background-color: @green;
+    padding: 0 12px;
+    border-radius: 99px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: @bg1;
+    margin: 6px 8px;
+
+    transition: background-color 200ms ease;
+}
+
+#battery.warning {
+    background-color: @yellow;
+}
+
+#battery.critical {
+    background-color: @red;
+}
